@@ -29,9 +29,7 @@ def brute():
 			sub = "http://" + sub + "." + url
 		o = check(sub)
 		with lock:
-			if o == 1:
-				print "[!] Incorrect: " + sub
-			else:
+			if o != 1:
 				print "[+] Found: " + sub
 
 def main():
